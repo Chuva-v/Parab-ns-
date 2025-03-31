@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+}
+.cot{
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.carta{
+  z-index: 5;
+  border: 100px #ED4968 solid;
+  border-top: 50px solid transparent;
+  border-bottom: 70px solid #ED4957;
+  border-right: 100px solid #ED4968;
+}
+.carta0{
+  z-index: 1;
+  position: absolute;
+  border: 100px solid #CF7F9C;
+  border-top: 50px solid #AA152A;
+  border-bottom: 70px solid bisque;
+  border-right: 100px solid lemonchiffon;
+  box-shadow: 
+  -6px -6px 10px 0 #E8c2D2,
+  6px 6px 20px 0 #570712
+  ;
+}
+.abre{
+  position: absolute;
+  z-index: 3;
+  border: 100px solid #BD4366;
+  border-top: 50px solid #AA152A;
+  border-bottom: 70px solid transparent;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  transform-origin: top center;
+  transition: transform 0.2s ease;
+}
+.abrir{
+  background-color: #FBB3CA;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  right: 60%;
+  top: 65%;
+  width: 55px;
+  height: 25px;
+}
+.abrir:active ~ .abre,
+.abrir:focus ~ .abre{
+  transform: rotateX(180deg);
+}
+.abrir:active ~ .texto,
+.abrir:focus ~ .texto{
+  transform: translateY(-50px);
+  z-index: 4;
+}
+.texto{
+  position: absolute;
+  z-index: 2;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  width: 190px;
+  height: 100px;
+  text-align: center;
+  transition-property:transform;
+  transition-duration: 1.5s;
+  transition-delay: 1s;
+  transition-timing-function: ease;
+}
+.voltar{
+  background-color: #FBB3CA;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  right: 27%;
+  top: 65%;
+  width: 55px;
+  height: 25px;
+}
+h4, h6{
+  color: crimson
+}
+.z{
+  position: absolute;
+}
+.coração{
+  z-index: 100;
+  position: relative;
+  background-color: rgb(100, 20, 20, 0.3);
+  height: 50px;
+  width: 50px;
+}
+.a{
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+}
+.b{
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+}
